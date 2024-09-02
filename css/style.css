@@ -1,0 +1,432 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.container {
+    background-color: rgba(255, 228, 196, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FF8C00;
+}
+
+footer {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+
+
+/* Sign-in page */
+body.signin {
+    background: url('../images/sign-in.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signin .container {
+    width: 300px;
+}
+
+.signin .logo {
+    width: 150px;
+}
+
+.signin footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8B4513;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin .footer-logo {
+    width: 150px;
+}
+
+/* Register page */
+body.register {
+    background: url('../images/register.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register .container {
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.register .logo {
+    width: 150px;
+}
+
+.register footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8B4513;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin .container,
+.register .container {
+    margin-bottom: 200px;
+}
+.register .footer-logo {
+    width: 150px;
+}
+
+/* Index page */
+body.index {
+    background: url('../images/index-botton.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.index .container {
+    background-color: rgba(255, 228, 196, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.index header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.index .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.index .logo {
+    width: 300px;
+}
+
+.index .sign-in {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.index .content-box {
+    background-color: rgba(255, 228, 196, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.index .register-btn {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.index footer {
+    padding: 20px 0;
+}
+
+.index .footer-content {
+    margin-left: 20px;
+}
+
+.index .footer-logo {
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* Recipe Management page */
+body.management {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.management .content-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.management nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF9852;
+    padding: 10px 20px;
+}
+
+.management aside {
+    width: 200px;
+    background-color: #FFCC99;
+    padding: 20px;
+}
+
+.management main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.management .logo {
+    width: 150px;
+    display: block;
+    margin: 0;
+}
+
+.management .nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.management #account-name {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.management .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.management aside {
+    background-color: #FFCC99;
+    width: 200px;
+    padding: 20px;
+}
+
+.management aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.management aside ul li {
+    margin-bottom: 10px;
+}
+
+.management aside ul li button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF9933;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.management main {
+    flex: 1;
+    padding: 20px;
+}
+
+.management .content-section {
+    display: none;
+}
+
+.management .content-section.active {
+    display: block;
+}
+
+.management .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.management .search-bar input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.management .filters label {
+    margin-right: 10px;
+}
+
+.management .recipe-list {
+    margin-top: 20px;
+}
+
+.management .recipe-list .recipe-item {
+    display: flex;
+    align-items: center;
+    background-color: #FFF5E6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.management .recipe-list .recipe-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.management .form-group {
+    margin-bottom: 15px;
+}
+
+.management .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.management .form-group input,
+.management .form-group select,
+.management .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.management .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.management form button {
+    padding: 10px 20px;
+    background-color: #FF9852;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.management .recipe-detail {
+    background-color: #FFF5E6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.management .recipe-detail img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.management .recipe-detail h2 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.management .recipe-detail p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.management .recipe-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-right: 100px;
+
+}
+
+.management .delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    text-align: left;
+}
